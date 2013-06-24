@@ -1,0 +1,747 @@
+/*--------------Structure -------------------------------------*/
+
+
+body {
+  font-family: 'Oswald', Helvetica, Arial, sans-serif;
+/*font-family:  sans-serif;*/
+
+  background: #000 url('../img/bg_pat.png') repeat;
+  display: block;
+  overflow: auto; 
+  font-size: 14px;
+  color: #bfbfbf;
+  margin: 0 0 80px 0;
+}
+
+.container, #aboutMe, #contact{
+   width:auto;
+   padding:43px 39px 0;
+   /*background-color: #1b1c1d;*/
+   /*background-image:url("../img/background_noise.png");*/
+   /*background-color:#1b1c1d;*/
+       /*background-color:#262626;*/
+
+   overflow: hidden;
+   /*max-width:1200px;*/
+   margin:0 auto;
+
+
+       /*background: url('../img/fade.png');*/
+
+}
+
+
+.container {
+/*box-shadow: 0 0 2px 2px #888;*/
+  -webkit-box-shadow: inset 0px 0px 2px 2px rgba(27, 27, 27, 0.8);
+  -moz-box-shadow:inset 0px 0px 2px 2px rgba(27, 27, 27, 0.8);
+  -o-box-shadow:inset 0px 0px 2px 2px rgba(27, 27, 27, 0.8);
+  box-shadow: inset 0px 0px 2px 2px rgba(27, 27, 27, 0.8);
+
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+
+/*
+  -webkit-box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.8);*/
+  
+  /*background: #1b1b1b;*/
+  background-image:url("../img/background_noise.png");
+
+  width: auto;
+  padding: 43px 39px 0;
+  overflow: hidden;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+/*look at subtle patterns, color lovers */
+
+
+
+/*--------------Common Styles -------------------------------------*/
+
+h3 {
+  color:#2eddbb;
+  margin: 15px 0;
+  letter-spacing: 0.05em;
+}
+
+p {
+  margin: 0 0 10px 0;
+  line-height:24px; 
+  letter-spacing:-.005em; 
+  font-size:17px;
+  color:#898989;
+  text-shadow: 0 -1px 1px black;
+}
+
+
+/*--------------Header-------------------------------------*/
+
+
+
+
+nav #mobileNavBar {
+  font-family: 'Oswald', Helvetica, Arial, sans-serif;
+
+  -webkit-box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.8);
+  background: #1b1b1b;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#353535), to(#010101));
+  background: -webkit-linear-gradient(0% 0%, 0% 100%, from(#353535), to(#010101));
+  background: -moz-linear-gradient(center top, #353535, #010101);
+  background: linear-gradient(#353535, #010101);
+  -webkit-transition: all 0.4s ease-in-out;
+  -webkit-transition-delay: 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+  
+  height: 50px;
+  line-height: 38px;
+  border-bottom: 1px solid #35383B;
+
+  font-size: 15px;
+  text-align: center;
+  position: fixed;
+  top: -57px;
+  width: 100%;
+  z-index: 400;
+  overflow: hidden;
+  margin:0;
+  width: 100%;
+  display: inline;
+}
+
+
+
+nav #mobileNavBar #backToTop{
+  float: left;
+  padding: 5px 10px 10px 10px;
+  margin-left: 29px;
+}
+
+nav #mobileNavBar ul{
+    position: relative;
+    margin: 0;
+}
+
+nav #mobileNavBar ul li{
+  float: right;
+  width:100px;
+  letter-spacing: .07em;
+  margin: 0 0 5px 0px;
+  text-transform: uppercase;
+  margin: 5px auto;
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+}
+
+nav #mobileNavBar ul li a, nav #mobileNavBar #backToTop{
+  color: #bfbfbf;
+  opacity: 0.6;
+  -webkit-transition: opacity 0.2s ease-out;
+  -moz-transition: opacity 0.2s ease-out;
+  -o-transition: opacity 0.2s ease-out;
+  transition: opacity 0.2s ease-out;
+
+}
+
+nav #mobileNavBar ul li a, nav #mobileNavBar #backToTop{
+  text-decoration: none;
+}
+
+nav #mobileNavBar ul li a:visited{
+  color: #bfbfbf;
+}
+
+nav #mobileNavBar ul li a:hover, nav #mobileNavBar #backToTop:hover{
+  opacity: 1;
+}
+
+
+
+nav #mobileNavBar.shown {
+
+  top: 0px;
+}
+
+
+.header {
+    text-align: center;
+    padding: 30px;
+    min-height: 350px;
+    height: 60%;
+    background: -moz-linear-gradient(top,  rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 47%, rgba(0,0,0,0) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.65)), color-stop(47%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 47%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 47%,rgba(0,0,0,0) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 47%,rgba(0,0,0,0) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 47%,rgba(0,0,0,0) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+
+ /*   background: url('../img/light.png') no-repeat;
+    background-position: top center;
+    opacity: 0.5;*/
+    /*background-color:#262626;*/
+/*       background-color:#1b1c1d;
+       background-image: ;
+        background: url('img/light.png') no-repeat;
+*/
+}
+
+.header #logo {
+
+  opacity: 0.8;
+}
+
+.header .name {
+    font-size: 30px;
+      color: #2eddbb;
+  /*color: #666666;*/
+  letter-spacing: .05em;
+  margin: 0 0 5px 0px;
+  /*text-transform: uppercase;*/
+
+
+
+}
+
+.header .title{
+    font-size: 17px;
+      color: #bfbfbf;
+  
+  
+  letter-spacing: .07em;
+  margin: 0 0 15px 0px;
+  text-transform: uppercase;
+
+
+
+}
+
+
+.header .nav img {
+  margin: 10px;
+
+}
+.header .nav a{
+      text-decoration: none;
+}
+
+/*.header .nav li a {
+position: relative;
+display: block;
+width: 56px;
+height: 60px;
+opacity: 0.6;
+-webkit-transition: opacity 0.2s ease-out;
+}*/
+
+.header p {
+      color:#ffffff;
+      /*color:#2eddbb;*/
+
+}
+
+.navIcon strong{
+  font-family: 'socialFont', 'Oswald', Helvetica, Arial, sans-serif;
+
+  width: 100%;
+  text-align: center;
+  padding-top: 15px; }
+.navIcon ul {
+    width: 319px;
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    left: 1px; }
+.navIcon li {
+    position: relative;
+    display: inline-block;
+    width: 56px;
+    height: auto;
+    text-align: center; }
+.navIcon li a {
+      position: relative;
+      display: block;
+      width: 56px;
+      height: auto;
+      opacity: 0.6;
+      -webkit-transition: opacity 0.2s ease-out;
+      -moz-transition: opacity 0.2s ease-out;
+      -o-transition: opacity 0.2s ease-out;
+      transition: opacity 0.2s ease-out;
+      text-decoration: none; }
+.navIcon li i {
+      color: #bfbfbf;
+      vertical-align: middle;
+    }
+
+.navIcon li strong {
+      position: absolute;
+      /*font-size: 17px;*/
+      color: #bfbfbf;
+      /*letter-spacing: .07em;*/
+      margin: 0 0 5px 0px;
+      /*text-transform: uppercase;*/
+      bottom: -30px;
+      width: 100%;
+      display: block;
+      text-align: center;
+      opacity: 0;
+      -webkit-transition: opacity 0.5s ease-out, bottom 0.5s ease-out;
+      -moz-transition: opacity 0.5s ease-out, bottom 0.5s ease-out;
+      -o-transition: opacity 0.5s ease-out, bottom 0.5s ease-out;
+      transition: opacity 0.5s ease-out, bottom 0.5s ease-out; }
+
+.navIcon li a:hover {
+      opacity: 1; }
+
+.navIcon li a:hover strong {
+        bottom: -30px;
+        opacity: 1; }
+
+
+  .header #logo {
+      padding: 30px;
+      
+    -webkit-animation: logoAnimation 3s ease-out;
+    -moz-animation: logoAnimation 3s ease-out;
+    -ms-animation: logoAnimation 3s ease-out;
+    -o-animation: logoAnimation 3s ease-out;
+    animation: logoAnimation 3s ease-out; }
+
+
+@-webkit-keyframes 'logoAnimation' {
+  from {
+    opacity: 0; }
+
+  50% {
+    opacity: 0; }
+  
+  to {
+    opacity: 1;} }
+
+@-moz-keyframes 'logoAnimation' {
+  from {
+    opacity: 0; }
+
+  to {
+    opacity: 1; } }
+
+@-o-keyframes 'logoAnimation' {
+  from {
+    opacity: 0; }
+
+  to {
+    opacity: 1; } }
+
+@keyframes 'logoAnimation' {
+  from {
+    opacity: 0; }
+
+  to {
+    opacity: 1; } }
+
+
+
+
+/*--------------Project -------------------------------------*/
+
+.container #work{
+
+  font-size: 18px;
+  color: #666666;
+  letter-spacing: .1em;
+  margin: 0 0 15px 3px;
+  text-transform: uppercase;
+
+}
+.portfolioContainer{
+      overflow: hidden;
+}
+
+.portfolioContainer .title{
+  font-size: 30px;
+  line-height: 42px;
+  letter-spacing: .01em;
+}
+
+.projectContainer{
+  width: auto; 
+  overflow: hidden;
+}
+.projectContainer .projectImage {
+  padding: 20px 0px;
+  width: 50%;
+  text-align: center;
+  float: left;
+
+}
+
+.projectContainer p {
+  margin: 10px auto;
+  padding: 30px;
+}
+
+.projectContent {
+  width: 100%;
+  overflow: hidden;
+}
+
+
+.separator {
+  border-top: 1px solid #35383B;
+}
+
+.left{
+  float: left;
+}
+
+.right{
+  float: right;
+}
+
+.hidden{
+  overflow: hidden;
+}
+
+.projectImage {
+  float: left;
+}
+
+
+.wallet-gallery {
+margin: 0 auto;
+position: relative;
+width: 303px;
+height: 599px;
+}
+
+.wallet-gallery figure {
+position: absolute;
+opacity: 0;
+-webkit-transition: opacity 0.5s linear;
+-moz-transition: opacity 0.5s linear;
+-o-transition: opacity 0.5s linear;
+transition: opacity 0.5s linear;
+}
+
+
+.gallery figure.selected {
+        opacity: 1
+}
+
+/*--------------About Me -------------------------------------*/
+
+.aboutContainer, .contactContainer {
+  overflow: hidden;
+}
+
+#aboutMe .avatar, #contact .avatar {
+  float: left;
+  margin-right: 30px;
+  margin-bottom: 20px;
+}
+
+#aboutMe .aboutMeDescription, #id .contactDescription{
+  float: left;
+  width: 70%;
+}
+
+#aboutMe h3, #contact h3{
+  font-size: 30px;
+  line-height: 42px;
+  letter-spacing: .01em;
+}
+
+#aboutMe #location{
+  padding-top: 20px;
+}
+
+#aboutMe i{
+  padding-right: 5px;
+}
+
+
+
+#aboutMe .aboutMeDescription a{
+  text-decoration: none;
+        color: #2eddbb;
+  opacity: 0.6;
+        -webkit-transition: opacity 0.2s ease-out;
+      -moz-transition: opacity 0.2s ease-out;
+      -o-transition: opacity 0.2s ease-out;
+      transition: opacity 0.2s ease-out;
+}
+
+#aboutMe .aboutMeDescription a:hover{
+  opacity: 1;
+}
+
+#aboutMe .aboutMeDescription a:visited{
+  /*color: #bfbfbf;*/
+        color: #2eddbb;
+
+}
+
+
+
+/*--------------Get In Touch -------------------------------------*/
+
+div#contact .contactContainer {
+
+  padding-bottom: 100px;
+
+}
+
+div#contact a {
+  color: #2eddbb;
+  text-decoration: none;
+}
+
+.contactDescription p {
+    margin-bottom: 30px;
+}
+
+
+/*--------------Media Query -------------------------------------*/
+
+
+@media screen and (max-width:850px){
+  
+  .projectContainer .projectImage {
+    text-align: center;
+    float:none;
+    width:100%;
+    height:auto;
+  }
+
+
+
+  .projectContainer p {
+    float:none;
+    width:auto;
+    
+  }
+
+  #aboutMe .aboutMeDescription, #id .contactDescription{
+  width: 100%;
+
+}
+
+}
+
+@media screen and (max-width:420px) {
+  
+  .projectContainer .projectImage img {
+    width:100%;
+    height:auto;
+  }
+
+
+
+  .projectContainer p {
+    float:none;
+    width:auto;
+    
+  }
+}
+
+/*smart phones landscape / portrait */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  
+body {
+
+  font-size: 30px;
+  margin: 0 0 500px 0;
+}
+
+.container, #aboutMe, #contact{
+   width:auto;
+   padding:43px 39px 0;
+   overflow: hidden;
+   margin:0 auto;
+}
+
+
+.container {
+
+  width: auto;
+  padding: 43px 39px 0;
+  overflow: hidden;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+
+
+/*--------------Common Styles -------------------------------------*/
+
+h3, #aboutMe h3, #contact h3{
+  letter-spacing: 0.05em;
+  font-size: 60px;
+}
+#aboutMe h3, #contact h3 {
+
+  padding: 50px 0;
+}
+
+.contactDescription p {
+    margin-bottom: 50px;
+}
+
+
+p {
+  margin: 0 0 50px 0;
+  line-height:35px; 
+  letter-spacing:-.005em; 
+  font-size:30px;
+  color:#898989;
+  text-shadow: 0 -1px 1px black;
+}
+/*--------------header -------------------------------------*/
+
+
+.header {
+
+    padding: 300px 0;
+    min-height: 350px;
+    height: 60%;
+}
+
+
+.header .name {
+    font-size: 60px;
+  letter-spacing: .05em;
+  margin: 0 0 40px 0px;
+
+}
+
+.header .title{
+    font-size: 50px;  
+  letter-spacing: .05em;
+  margin: 0 0 40px 0px;
+  text-transform: uppercase;
+
+
+
+}
+
+
+
+.navIcon strong{
+  font-family: 'socialFont', 'Oswald', Helvetica, Arial, sans-serif;
+  width: 100%;
+}
+
+.navIcon ul {
+    width: auto;
+}
+
+.navIcon li, .navIcon li a {
+
+    width: 150px;
+}
+
+
+.navIcon li i {
+      vertical-align: middle;
+    }
+
+.navIcon li strong {
+      font-size: 35px;
+      position: absolute;
+      opacity: 0.6;
+      margin: 0 0 10px 0px;
+      bottom: -50px;
+      width: 100%; }
+
+
+.navIcon li a:hover strong {
+        bottom: -50px;
+}
+
+  .header #logo {
+      padding: 30px;
+      height: 150px;
+      width: 150px;
+}
+
+
+.container #work{
+  font-size: 40px;
+  margin: 0 0 40px 0px;
+}
+
+  .projectContainer .projectImage {
+    text-align: center;
+    float:none;
+    width:100%;
+    height:auto;
+  }
+
+
+
+.projectContainer p {
+
+  margin: 10px auto;
+  padding: 60px;
+}
+
+.portfolioContainer .title{
+  
+  padding: 50px 0;
+}
+
+.separator {
+  border-top: 3px solid #35383B;
+}
+
+.projectContainer img {
+
+    width: 450px;
+    height: 900px;
+}
+
+.wallet-gallery {
+/*float: left;*/
+/*margin: 5px 9px 0 50px;*/
+margin: 0 auto;
+position: relative;
+width: 450px;
+height: 900px;
+}
+
+.wallet-gallery figure {
+position: absolute;
+opacity: 0;
+-webkit-transition: opacity 0.5s linear;
+-moz-transition: opacity 0.5s linear;
+-o-transition: opacity 0.5s linear;
+transition: opacity 0.5s linear;
+}
+
+  #aboutMe .aboutMeDescription, #id .contactDescription{
+  width: 100%;
+
+}
+
+.avatar img {
+  height: 300px;
+  width: 300px;
+  margin-bottom: 30px;
+}
+
+}
+
+
+
