@@ -1,5 +1,4 @@
 
-//$(document).ready(function(){......})
 $(function(){
 
 $('a').click(function(){
@@ -10,6 +9,7 @@ $('a').click(function(){
     return false
 });
 
+//nav bar
 
 $(window).scroll(function(){
     if ($(this).scrollTop() > 380 ){
@@ -24,10 +24,7 @@ $(window).scroll(function(){
 
 
 
-// $("#logo").click(function(){
-//     console.log("clicked Logo!")
-//     elementSpringTo("#logo", 300, 250, [120, 10, 3], 1000, 200, 100);
-//  })
+
 var cycle = true;
 
 $('#logo').click( function(){
@@ -58,7 +55,6 @@ $('#project1').cycle({
     prev:   '#prev2' 
 })
 
-// $(".wallet-gallery").gallery();
  $('.gallery').gallery();
 
 })

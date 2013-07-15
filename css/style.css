@@ -3,8 +3,6 @@
 
 body {
   font-family: 'Oswald', Helvetica, Arial, sans-serif;
-/*font-family:  sans-serif;*/
-
   background: #000 url('../img/bg_pat.png') repeat;
   display: block;
   overflow: auto; 
@@ -16,23 +14,15 @@ body {
 .container, #aboutMe, #contact{
    width:auto;
    padding:43px 39px 0;
-   /*background-color: #1b1c1d;*/
-   /*background-image:url("../img/background_noise.png");*/
-   /*background-color:#1b1c1d;*/
-       /*background-color:#262626;*/
 
    overflow: hidden;
-   /*max-width:1200px;*/
    margin:0 auto;
 
-
-       /*background: url('../img/fade.png');*/
 
 }
 
 
 .container {
-/*box-shadow: 0 0 2px 2px #888;*/
   -webkit-box-shadow: inset 0px 0px 2px 2px rgba(27, 27, 27, 0.8);
   -moz-box-shadow:inset 0px 0px 2px 2px rgba(27, 27, 27, 0.8);
   -o-box-shadow:inset 0px 0px 2px 2px rgba(27, 27, 27, 0.8);
@@ -43,12 +33,6 @@ body {
   -o-border-radius: 5px;
   border-radius: 5px;
 
-/*
-  -webkit-box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.8);
-  -moz-box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.8);
-  box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.8);*/
-  
-  /*background: #1b1b1b;*/
   background-image:url("../img/background_noise.png");
 
   width: auto;
@@ -57,9 +41,6 @@ body {
   max-width: 1200px;
   margin: 0 auto;
 }
-
-
-/*look at subtle patterns, color lovers */
 
 
 
@@ -71,7 +52,7 @@ h3 {
   letter-spacing: 0.05em;
 }
 
-p {
+p, .projectDescription ul li {
   margin: 0 0 10px 0;
   line-height:24px; 
   letter-spacing:-.005em; 
@@ -80,6 +61,15 @@ p {
   text-shadow: 0 -1px 1px black;
 }
 
+.projectDescription ul li {
+  
+  line-height:18px; 
+  margin-left: 20px; 
+}
+.projectDescription ul {
+  
+  padding: 10px; 
+}
 
 /*--------------Header-------------------------------------*/
 
@@ -186,14 +176,6 @@ nav #mobileNavBar.shown {
     background: linear-gradient(to bottom,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 47%,rgba(0,0,0,0) 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
 
- /*   background: url('../img/light.png') no-repeat;
-    background-position: top center;
-    opacity: 0.5;*/
-    /*background-color:#262626;*/
-/*       background-color:#1b1c1d;
-       background-image: ;
-        background: url('img/light.png') no-repeat;
-*/
 }
 
 .header #logo {
@@ -202,20 +184,17 @@ nav #mobileNavBar.shown {
 }
 
 .header .name {
-    font-size: 30px;
-      color: #2eddbb;
-  /*color: #666666;*/
+   font-size: 30px;
+  color: #2eddbb;
   letter-spacing: .05em;
   margin: 0 0 5px 0px;
-  /*text-transform: uppercase;*/
-
 
 
 }
 
 .header .title{
     font-size: 17px;
-      color: #bfbfbf;
+    color: #bfbfbf;
   
   
   letter-spacing: .07em;
@@ -235,18 +214,9 @@ nav #mobileNavBar.shown {
       text-decoration: none;
 }
 
-/*.header .nav li a {
-position: relative;
-display: block;
-width: 56px;
-height: 60px;
-opacity: 0.6;
--webkit-transition: opacity 0.2s ease-out;
-}*/
 
 .header p {
       color:#ffffff;
-      /*color:#2eddbb;*/
 
 }
 
@@ -274,10 +244,6 @@ opacity: 0.6;
       width: 56px;
       height: auto;
       opacity: 0.6;
-      -webkit-transition: opacity 0.2s ease-out;
-      -moz-transition: opacity 0.2s ease-out;
-      -o-transition: opacity 0.2s ease-out;
-      transition: opacity 0.2s ease-out;
       text-decoration: none; }
 .navIcon li i {
       color: #bfbfbf;
@@ -286,20 +252,17 @@ opacity: 0.6;
 
 .navIcon li strong {
       position: absolute;
-      /*font-size: 17px;*/
       color: #bfbfbf;
-      /*letter-spacing: .07em;*/
       margin: 0 0 5px 0px;
-      /*text-transform: uppercase;*/
-      bottom: -30px;
+      bottom: -50px;
       width: 100%;
       display: block;
       text-align: center;
       opacity: 0;
-      -webkit-transition: opacity 0.5s ease-out, bottom 0.5s ease-out;
-      -moz-transition: opacity 0.5s ease-out, bottom 0.5s ease-out;
-      -o-transition: opacity 0.5s ease-out, bottom 0.5s ease-out;
-      transition: opacity 0.5s ease-out, bottom 0.5s ease-out; }
+      -webkit-transition: opacity 0.2s ease-out, bottom 0.2s ease-out;
+      -moz-transition: opacity 0.2s ease-out, bottom 0.2s ease-out;
+      -o-transition: opacity 0.2s ease-out, bottom 0.2s ease-out;
+      transition: opacity 0.2s ease-out, bottom 0.2s ease-out; }
 
 .navIcon li a:hover {
       opacity: 1; }
@@ -318,6 +281,7 @@ opacity: 0.6;
     -o-animation: logoAnimation 3s ease-out;
     animation: logoAnimation 3s ease-out; }
 
+  
 
 @-webkit-keyframes 'logoAnimation' {
   from {
@@ -349,7 +313,6 @@ opacity: 0.6;
 
   to {
     opacity: 1; } }
-
 
 
 
@@ -386,9 +349,16 @@ opacity: 0.6;
 
 }
 
+.projectContainer .video{
+  padding: 20px 0px;
+  width: 530px;
+  text-align: center;
+  float: left;
+}
+
 .projectContainer p {
   margin: 10px auto;
-  padding: 30px;
+  padding: 10px;
 }
 
 .projectContent {
@@ -422,7 +392,7 @@ opacity: 0.6;
 margin: 0 auto;
 position: relative;
 width: 303px;
-height: 599px;
+height: 650px;
 }
 
 .wallet-gallery figure {
@@ -472,7 +442,7 @@ transition: opacity 0.5s linear;
 
 
 
-#aboutMe .aboutMeDescription a{
+#aboutMe .aboutMeDescription a, #contact a{
   text-decoration: none;
         color: #2eddbb;
   opacity: 0.6;
@@ -482,15 +452,14 @@ transition: opacity 0.5s linear;
       transition: opacity 0.2s ease-out;
 }
 
-#aboutMe .aboutMeDescription a:hover{
+#aboutMe .aboutMeDescription a:hover,  #contact a:hover{
   opacity: 1;
 }
 
-#aboutMe .aboutMeDescription a:visited{
-  /*color: #bfbfbf;*/
+#aboutMe .aboutMeDescription a:visited, #contact a:visited{
         color: #2eddbb;
-
 }
+
 
 
 
@@ -510,6 +479,32 @@ div#contact a {
 .contactDescription p {
     margin-bottom: 30px;
 }
+
+#contact ul {
+    margin: 30px;
+}
+
+#contact li {
+  margin: 5px;
+  font-size: 15px;
+}
+#contact li a {
+      opacity: 0.6;
+      -webkit-transition: opacity 0.2s ease-out;
+      -moz-transition: opacity 0.2s ease-out;
+      -o-transition: opacity 0.2s ease-out;
+      transition: opacity 0.2s ease-out;
+      text-decoration: none; 
+    }
+#contact li i {
+      color: #bfbfbf;
+    }
+
+#contact li a:hover {
+      opacity: 1; }
+
+
+
 
 
 /*--------------Media Query -------------------------------------*/
@@ -690,58 +685,18 @@ p {
   }
 
 
-
-.projectContainer p {
-
-  margin: 10px auto;
-  padding: 60px;
-}
-
-.portfolioContainer .title{
-  
-  padding: 50px 0;
-}
-
-.separator {
-  border-top: 3px solid #35383B;
-}
-
-.projectContainer img {
-
-    width: 450px;
-    height: 900px;
-}
-
-.wallet-gallery {
-/*float: left;*/
-/*margin: 5px 9px 0 50px;*/
-margin: 0 auto;
-position: relative;
-width: 450px;
-height: 900px;
-}
-
-.wallet-gallery figure {
-position: absolute;
-opacity: 0;
--webkit-transition: opacity 0.5s linear;
--moz-transition: opacity 0.5s linear;
--o-transition: opacity 0.5s linear;
-transition: opacity 0.5s linear;
-}
-
   #aboutMe .aboutMeDescription, #id .contactDescription{
   width: 100%;
 
-}
+  }
 
 .avatar img {
   height: 300px;
   width: 300px;
   margin-bottom: 30px;
-}
+ }
 
-}
+
 
 
 
