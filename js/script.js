@@ -11,16 +11,16 @@ $('a').click(function(){
 
 //nav bar
 
-$(window).scroll(function(){
-    if ($(this).scrollTop() > 380 ){
-        $("nav #mobileNavBar").addClass("shown")
-    }
-    else if ($(this).scrollTop() <= 380 ) {
-        $("nav #mobileNavBar").removeClass("shown")
+// $(window).scroll(function(){
+//     if ($(this).scrollTop() > 380 ){
+//         $("nav #mobileNavBar").addClass("shown")
+//     }
+//     else if ($(this).scrollTop() <= 380 ) {
+//         $("nav #mobileNavBar").removeClass("shown")
 
-    }
+//     }
 
-})
+// })
 
 
 
