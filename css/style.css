@@ -241,7 +241,7 @@ nav #mobileNavBar.shown {
 .navIcon li a {
       position: relative;
       display: block;
-      width: 56px;
+      width: 60px;
       height: auto;
       opacity: 0.6;
       text-decoration: none; }
